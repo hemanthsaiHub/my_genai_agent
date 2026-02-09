@@ -4,5 +4,8 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"status": "GenAI backend is running"}
+    return {"message": "Backend is working"}
 
+@app.get("/test")
+def test():
+    return {"test": "ok"}
